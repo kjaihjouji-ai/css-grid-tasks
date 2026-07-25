@@ -7,7 +7,13 @@
 
 .code-editor {
   /* BEGIN (write your solution here) */
-
+display: grid;
+grid-template-columns: 250px 1fr;
+grid-template-rows: max-content 1fr max-content;
+grid-template-areas:
+  "header header"
+  "tree   main"
+  "tree   footer";
   /* END */
   width: 100vw;
   height: 100vh;
@@ -28,7 +34,7 @@
   --line-height: 1.5;
 
   /* BEGIN (write your solution here) */
-
+grid-area: header;
   /* END */
   height: calc(var(--font-size) * var(--line-height));
   padding: 5px 0;
@@ -42,14 +48,14 @@
 
 .editor-tree {
   /* BEGIN (write your solution here) */
-
+grid-area: tree;
   /* END */
   border-right: 3px solid #00ffc0;
 }
 
 .editor-main {
   /* BEGIN (write your solution here) */
-
+grid-area: main;
   /* END */
   padding: 30px;
 
@@ -59,7 +65,7 @@
 
 .editor-footer {
   /* BEGIN (write your solution here) */
-
+grid-area: footer;
   /* END */
   padding: 30px;
 }
