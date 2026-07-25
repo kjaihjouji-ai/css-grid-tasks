@@ -22,7 +22,13 @@ h1 {
 
 .template-grid {
   /* BEGIN (write your solution here) */
-
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+gap: 20px;
+grid-template-areas:
+  "header   header   header   header   header   header   header   header"
+  "carousel carousel carousel carousel carousel carousel carousel carousel"
+  "sidebar  sidebar  content  content  content  content  content  content";
   /* END */
 }
 
@@ -37,19 +43,19 @@ h1 {
 
 .main {
   /* BEGIN (write your solution here) */
-
+grid-area: content;
   /* END */
 }
 
 .left-aside {
   /* BEGIN (write your solution here) */
-
+grid-area: sidebar;
   /* END */
 }
 
 .carousel {
   /* BEGIN (write your solution here) */
-
+grid-area: carousel;
   /* END */
   min-height: 300px;
   margin-bottom: 30px;
@@ -97,31 +103,33 @@ h1 {
 
 .grid-12 {
   /* BEGIN (write your solution here) */
-
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+gap: 20px;
   /* END */
 }
 
 .col-3 {
   /* BEGIN (write your solution here) */
-
+grid-column: span 3;
   /* END */
 }
 
 .col-4 {
   /* BEGIN (write your solution here) */
-
+grid-column: span 4;
   /* END */
 }
 
 .col-6 {
   /* BEGIN (write your solution here) */
-
+grid-column: span 6;
   /* END */
 }
 
 .col-12 {
   /* BEGIN (write your solution here) */
-
+grid-column: span 12;
   /* END */
 }
 
