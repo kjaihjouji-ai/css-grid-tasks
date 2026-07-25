@@ -13,19 +13,22 @@ h1 {
 
 .grid-header {
   /* BEGIN (write your solution here) */
-
+display: grid;
+grid-template-columns: max-content 1fr 200px;
   /* END */
 }
 
 .grid-main {
   /* BEGIN (write your solution here) */
-
+display: grid;
+grid-template-columns: 300px 1fr;
   /* END */
 }
 
 .grid-footer {
   /* BEGIN (write your solution here) */
-
+display: grid;
+grid-template-columns: repeat(auto-fill, 150px);
   /* END */
 }
 
